@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispositivos electronicos</title>
+    <link rel="stylesheet" href="PagWebRDE.css">
+</head>
+
+<body>
+
+<header>
+    <h1>♻️ Reciclado de Dispositivos Electrónicos</h1>
+    <p>Ayúdanos a cuidar el medio ambiente</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <p>
+            Te invitamos a participar en la recolección de dispositivos electrónicos
+            que ya no utilizas para darles un segundo uso.
+        </p>
+    </section>
+
+    <section>
+        <h2>📌 Acciones importantes</h2>
+
+        <div class="accion" onclick="toggleInfo('reciclar')">
+            ♻️ Reciclar
+        </div>
+        <div id="reciclar" class="info">
+            <p>El reciclaje permite recuperar materiales y reducir la contaminación.</p>
+            <img src="img/reciclar.png.png">
+        </div>
+
+        <div class="accion" onclick="toggleInfo('reutilizar')">
+            🔄 Reutilizar
+        </div>
+        <div id="reutilizar" class="info">
+            <p>Reutilizar consiste en dar un segundo uso a los dispositivos.</p>
+            <img src="img/reutilizar.png.png">
+        </div>
+
+        <div class="accion" onclick="toggleInfo('reducir')">
+            📉 Reducir
+        </div>
+        <div id="reducir" class="info">
+            <p>Reducir implica consumir menos tecnología innecesaria.</p>
+            <img src="img/AccionesResiclaje.png">
+        </div>
+    </section>
+
+    <section>
+        <h2>📍 Información del evento</h2>
+        <p><strong>Fecha:</strong> Martes y Jueves de Abril y Mayo</p>
+        <p><strong>Lugar:</strong> Tu comunidad</p>
+        <p><strong>Hora:</strong> 11:30 - 2:00</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Reciclaje Electrónico</p>
+</footer>
+
+<script>
+function toggleInfo(id) {
+    var elemento = document.getElementById(id);
+
+    if (elemento.style.display === "block") {
+        elemento.style.display = "none";
+    } else {
+        elemento.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
